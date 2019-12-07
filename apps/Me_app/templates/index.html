@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Certify Me</title>
+    {% load static %}
+    <!-- <link rel="stylesheet" href="{% static 'Me_app/css/style.css' %}">  -->
+    <script src="{% static 'Me_app/js/script.js' %}"></script>
+</head>
+
+<body>
+    <!-- <div id="container"> -->
+    <div id="container" style="width:1350px;">
+        <div class="row">
+            <div class="col">
+                <div class="border border-primary"style="width:1365px;">
+                    <span><img src="{% static 'images/mepic1.jpg' %}" class="mx-4"
+                            style="width:10%; height:75px;"></img>
+                        <img src="{% static 'images/mepic2.jpg' %}" class="mx-5" style="width:10%; height:75px;"></img>
+                        <strong style="margin-left:160px; font-size:25px;">CERTIFY ME</strong>
+                        <img src="{% static 'images/pic3.jpg' %}"
+                            style="width:10%; height:50%;margin-left:170px;"></img>
+                        <img src="{% static 'images/mepic4.jpg' %}" class="margin-:100px"
+                            style="width:10%; height:60%; margin-left:150px; "></img>
+                    </span>
+                </div>
+                <div class=" border border-primary"style="width:1365px;">
+                    <a href="/myschool" class="badge badge-danger mx-5">MySchool</a>
+                    <a href="/certifyschools" class="badge badge-secondary mx-5">CertifySchools</a>
+                    <a href="/whycertificate" class="badge badge-success mx-5">Why get a certification?</a>
+                    <a href="/certification" class="badge badge-warning mx-5">Certification</a>
+                    <input type="text" placeholder="Search.." name="search" style="margin-left:300px;">
+                    <button type="submit"><i class="fa fa-search ml-1"></i></button>
+                </div>
+                <div id="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="ml-2"><strong>Certify Me</strong> is Chicago very first own non-profit
+                                organization for youths,
+                                founded
+                                <br> by elite Coding Dojo Software developers. Who wanted to give back to the
+                                community
+                                <br> by
+                                creating opportunities career base program, without the hassel of high loans.</p>
+                            <p class="ml-2"><strong>Certify Me</strong> goal objective is to give all public <br>
+                                highschools, a
+                                chance to
+                                allow their students to have the option<br>
+                                to chose a rewarding career.This opportunity is a certification <br>
+                                program ,that allow Junior and Senior Highschool students, a chance<br>
+                                to get certified , before graduating with job placement. </p>
+                        </div>
+                        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/8VahhdUYmQk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        </script>
+                        <div class="col-sm-3 border border-dark">
+                            <h3 class="ml-1">Certify Me</h3><img class="ml-5" src="{% static 'images/logo.jpg' %}"
+                                style="width:10%; height:10% "></img>
+                            <p>please sign in below<br>
+                                <a href="create an account">create an account</a></p>
+                            <form action="/profilepage" method="post">
+                                {% csrf_token %}
+                                <label for="username">Username:</label>
+                                <input class="form-control mb-3" type="text" name="username" id="username">
+                                <label for="login_password">Password:</label>
+                                <input class="form-control mb-3" type="password" name="login_password" id="password">
+                                <button type="submit" class=" btn btn-primary my-3">Sign In:</button>
+                                <!-- <button type="submit" class=" btn btn-primary" ><a href="/profilepage"></a>Sign In:</button> -->
+                        </div>
+                        <div class="container-fluid">
+                            <div class="border border-primary " style="width:1365px;">
+                                <div class="row">
+                                    <div class="col">
+                                        <p><strong>Learn about us</strong></p>
+                                        <ul style="list-style-type: square; color: red;">
+                                            <li><a href="/Blog">Blog</a></li>
+                                            <li><a href="/facebook.com">Certify Facebook</a></li>
+                                            <li><a href="/ContactUs">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col" style="margin-left:200px;">
+                                        <p><strong>Help</strong></p>
+                                        <ul style="list-style-type: square;color: red; ">
+                                            <li><a href="/faqs">FAQS</a></li>
+                                            <li><a href="/feedback">Leave Feedback</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+</body>
+
+</html

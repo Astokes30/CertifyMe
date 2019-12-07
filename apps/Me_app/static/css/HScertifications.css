@@ -1,0 +1,20 @@
+.container{
+    background: url('images/highschool.jpg');
+    background-size: cover;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    color: white;
+}
+
+h2, p {
+    margin-left: 30px;
+}
+
+.osha{
+    width: 100px;
+}
+

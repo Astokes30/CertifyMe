@@ -1,0 +1,18 @@
+.container{
+    background: url('images/collegepic.jpg');
+    background-size: cover;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+h2, p {
+    margin-left: 30px;
+}
+
+.osha{
+    width: 100px;
+}
